@@ -1,2 +1,9 @@
 has to install : pip install PyPDF2
- then taking a list named myPdfFiles where the value is pdf 1 and 2
+then taking a list named myPdfFiles where the value is pdf 1 and 2
+then creating merger using PyPDF2.PdfMerger()
+then running a loop to get all the pdfs in the list variable
+then pdfFile open with open(filename, 'rb')
+then read the pdfFile by using PyPDF2.PdfReader(pdfFile)
+then merge the files using merger which we created earlier amd append(pdfReader) the reader file
+then close the file using pdfFile.close()
+merger.write('marged.pdf')
